@@ -1,5 +1,8 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 interface AppIcon {
   src: string;
@@ -7,8 +10,18 @@ interface AppIcon {
 }
 
 const AppIcon = ({ src, name }: AppIcon) => {
+  const router = useRouter();
+  const extractFileName = (path: string) => {
+    const match = path.match(/\/(.*?)\./);
+    return match ? match[1] : null;
+  };
   return (
-    <div className="flex flex-col justify-center items-center w-24 h-28">
+    <div
+      className="flex flex-col justify-center items-center w-24 h-28"
+      onClick={() => {
+        router.push(`/${extractFileName(src)}`);
+      }}
+    >
       <div className="bg-red w-20 h-20 relative">
         <Image src={src} alt={name} fill />
       </div>

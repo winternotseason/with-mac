@@ -1,6 +1,6 @@
-import AppIcon from "./_component/app-icon";
-import MainHeader from "./_component/main-header";
-import MainNav from "./_component/main-nav";
+import AppIcon from "../_component/app-icon";
+import MainHeader from "../_component/main-header";
+import MainNav from "../_component/main-nav";
 
 export default function Home() {
   return (
