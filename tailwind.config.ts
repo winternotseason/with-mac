@@ -9,9 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        mac: "url('/macos-bg.jpg')",
+        calculator: "url('/calculator.png')",
+        calendar: "url('/calendar.png')",
+        vscode: "url('/vs-code.png')",
+        melon: "url('/melon.png')",
+        kakao: "url('/kakao.png')",
+        mongo : "url('/mongo.png')",
+        safari : "url('/safari.png')",
       },
     },
   },
