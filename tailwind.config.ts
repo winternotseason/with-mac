@@ -29,12 +29,14 @@ const config: Config = {
       },
       height: {
         "30rem": "30rem",
+        "22rem" : "22rem"
       },
       colors : {
         
       }
     },
   },
+  safelist: ['text-6xl'],
   plugins: [],
 };
 export default config;

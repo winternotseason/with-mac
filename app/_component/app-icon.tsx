@@ -19,7 +19,13 @@ const AppIcon = ({ src, name }: AppIcon) => {
     <div
       className="flex flex-col justify-center items-center w-24 h-28"
       onClick={() => {
-        router.push(`/${extractFileName(src)}`);
+        if (name === "github") {
+          window.open("https://github.com/winternotseason", "_blank");
+        } else if(name === "블로그") {
+          window.open("https://seodevelopment.tistory.com/", "_blank");
+        }else {
+          router.push(`/${extractFileName(src)}`);
+        }
       }}
     >
       <div className="bg-red w-20 h-20 relative">

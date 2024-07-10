@@ -8,8 +8,9 @@ export default function Home() {
       <MainHeader />
       <div className="pt-8 pl-3">
         <AppIcon src="/calculator.png" name="계산기" />
-        <AppIcon src="/calendar.png" name="캘린더" />
-        <AppIcon src="/melon.png" name="멜론" />
+        <AppIcon src="/diary.png" name="일기" />
+        <AppIcon src="/git.png" name="github" />
+        <AppIcon src="/blog.png" name="블로그" />
       </div>
       <MainNav />
     </div>
