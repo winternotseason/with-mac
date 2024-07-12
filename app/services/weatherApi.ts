@@ -20,25 +20,25 @@ export const WeatherApi = async () => {
     let weather = "";
     switch (Math.floor(data.weather[0].id / 100)) {
       case 2:
-        weather = "Thunderstorm";
+        weather = "bg-Thunderstorm";
         break;
       case 3:
-        weather = "Drizzle";
+        weather = "bg-Drizzle";
         break;
       case 5:
-        weather = "Rain";
+        weather = "bg-Rain";
         break;
       case 6:
-        weather = "Snow";
+        weather = "bg-Snow";
         break;
       case 7:
-        weather = "Atmosphere";
+        weather = "bg-Atmosphere";
         break;
       case 8:
         if (data.weather[0].id === 800) {
-          weather = "Clear";
+          weather = "bg-Clear";
         } else {
-          weather = "Clouds";
+          weather = "bg-Clouds";
         }
         break;
       default:

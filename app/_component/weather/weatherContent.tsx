@@ -14,15 +14,15 @@ const WeatherContent = () => {
 
   if (datas.length === 0) {
     return (
-      <div className="w-full h-full flex flex-col items-center justify-center pt-10 pl-52 pb-10 text-3xl text-white font-thin bg-white">
-        loading...
+      <div className="w-full h-full flex flex-col items-center justify-center pt-10 pb-10 text-3xl text-white font-thin bg-slate-700">
+        Loading...
       </div>
     );
   }
 
   return (
     <div
-      className={`w-full h-full flex flex-col items-center justify-center pt-10 pl-52 pb-10 text-3xl text-white font-thin bg-${data?.weather}
+      className={`w-full h-full flex flex-col items-center justify-center pt-10 pl-52 pb-10 text-3xl text-white font-thin ${data?.weather}
      bg-cover`}
     >
       <p className="text-4xl">{data?.name}</p>

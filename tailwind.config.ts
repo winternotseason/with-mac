@@ -44,7 +44,7 @@ const config: Config = {
       },
     },
   },
-  safelist: ["text-6xl"],
+  safelist: ["text-6xl", 'bg'],
   plugins: [],
 };
 export default config;
