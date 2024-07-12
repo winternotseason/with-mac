@@ -20,9 +20,9 @@ const WeatherBar = () => {
   return (
     <>
       {weathers.length === 0 ? (
-        <div>Loading...</div>
+        <div className="absolute left-0">Loading...</div>
       ) : (
-        <ul className="w-52 h-full  bg-black/30">
+        <ul className="absolute left-0 w-52 h-full pt-10 bg-black/30">
           {weathers.map((city) => (
             <li
               key={city.name}

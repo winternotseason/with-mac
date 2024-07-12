@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 const MacHeader = () => {
   const router = useRouter();
   return (
-    <div className="absolute top-4 left-2 flex justify-start items-center">
+    <div className="absolute z-10 top-4 left-2 flex justify-start items-center">
       <div
         className="w-3 h-3 rounded-full bg-mac-red ml-2"
         onClick={() => {

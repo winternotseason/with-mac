@@ -13,11 +13,13 @@ type CityWeather = {
 type Store = {
   datas: CityWeather[];
   pushData: (data: CityWeather) => void;
+  selectedCity: string;
   cleanData: () => void;
 };
 
 export const useStore = create<Store>()((set) => ({
   datas: [],
   pushData: (data) => set((state) => ({ datas: [...state.datas, data] })),
+  selectedCity: "seoul",
   cleanData: () => set(() => ({ datas: [] })),
 }));
