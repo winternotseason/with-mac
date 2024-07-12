@@ -22,21 +22,22 @@ const config: Config = {
         "mac-red": "#FF5F57",
         "mac-yellow": "#FEBC2E",
         "mac-green": "#28C840",
-        "cal-yellow" : "#FF9F0A"
+        "cal-yellow": "#FF9F0A",
       },
       boxShadow: {
         "3xl": "0 35px 60px -15px rgba(0, 0, 0, 0.3)",
       },
       height: {
         "30rem": "30rem",
-        "22rem" : "22rem"
+        "22rem": "22rem",
       },
-      colors : {
-        
-      }
+      colors: {
+        "light-gray": "#9094A4",
+        "navy" : "#1B2036"
+      },
     },
   },
-  safelist: ['text-6xl'],
+  safelist: ["text-6xl"],
   plugins: [],
 };
 export default config;

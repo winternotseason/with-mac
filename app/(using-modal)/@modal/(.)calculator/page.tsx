@@ -15,7 +15,6 @@ const Modal = () => {
   useEffect(() => {
     if (display.length > 7) {
       // 8,9,10 ...
-
       setDisplayFontSize("3xl");
     }
     if (display.length < 8) {
