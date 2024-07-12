@@ -4,7 +4,6 @@ import axios from "axios";
 import { useStore } from "../store/weatherStore";
 
 export const WeatherApi = async () => {
-  console.log("WeatherApi called");
   const pushData = useStore.getState().pushData;
   const cities = ["seoul", "tokyo", "new york", "london", "paris"];
 
@@ -18,6 +17,33 @@ export const WeatherApi = async () => {
 
   responses.forEach((response) => {
     const data = response.data;
+    let weather = "";
+    switch (Math.floor(data.weather[0].id / 100)) {
+      case 2:
+        weather = "Thunderstorm";
+        break;
+      case 3:
+        weather = "Drizzle";
+        break;
+      case 5:
+        weather = "Rain";
+        break;
+      case 6:
+        weather = "Snow";
+        break;
+      case 7:
+        weather = "Atmosphere";
+        break;
+      case 8:
+        if (data.weather[0].id === 800) {
+          weather = "Clear";
+        } else {
+          weather = "Clouds";
+        }
+        break;
+      default:
+        weather = "Unknown";
+    }
     pushData({
       name: data.name,
       country: data.sys.country,
@@ -25,7 +51,7 @@ export const WeatherApi = async () => {
       temp_max: data.main.temp_max.toString(),
       temp_min: data.main.temp_min.toString(),
       description: data.weather[0].description,
-      weather_id: data.weather[0].id,
+      weather,
     });
   });
 };

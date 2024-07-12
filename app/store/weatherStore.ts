@@ -1,25 +1,27 @@
 import { create } from "zustand";
 
-type CityWeather = {
+export type CityWeather = {
   name: string;
   country: string;
   temp: string;
   temp_max: string;
   temp_min: string;
   description: string;
-  weather_id: number;
+  weather: string;
 };
 
 type Store = {
   datas: CityWeather[];
   pushData: (data: CityWeather) => void;
   selectedCity: string;
+  setSelectedCity: (city: string) => void;
   cleanData: () => void;
 };
 
 export const useStore = create<Store>()((set) => ({
   datas: [],
   pushData: (data) => set((state) => ({ datas: [...state.datas, data] })),
-  selectedCity: "seoul",
+  selectedCity: "Seoul",
+  setSelectedCity: (city) => set(() => ({ selectedCity: city })),
   cleanData: () => set(() => ({ datas: [] })),
 }));
