@@ -38,17 +38,14 @@
 
 ## 🔑 주요 기능
 ### 메인 화면
-
-
+사진
+기능
 ### 계산기 앱
-
-<img src = "https://github.com/user-attachments/assets/7f50fb74-c50f-4190-bd7c-227356eb1c6e" width="430" height="500">
-
-- **기본 연산**: 덧셈, 뺄셈, 곱셈, 나눗셈
-- **그 외**: 부호 변경, 백분율 계산 등
+사진
+기능
 ### 날씨 앱
-
-<img src = "https://github.com/user-attachments/assets/059871ae-2d39-4c1f-ad86-8788cf872b68" width="650" height="400">
+사진
+기능
 
    
 ## 📁 파일 구조
