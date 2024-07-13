@@ -9,8 +9,8 @@
 ## ✍️ 개요
 
 - 📄 프로젝트 명: TOY Project IN Mac OS
-- 📅 개발 기간: 2024.06.27-2024.07.11
-- 🔨 도구: NextJS, Typescript, TwilwindCSS, MongoDBM, zustand
+- 📅 개발 기간: 2024.07.09-2024.07.11
+- 🔨 도구: NextJS, Typescript, TwilwindCSS, zustand
 - 👩🏻‍💻 개발자: 황서연 (개인개발)
 
 
