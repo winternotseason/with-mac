@@ -38,14 +38,25 @@
 
 ## 🔑 주요 기능
 ### 메인 화면
-사진
-기능
+
+<img width="1000" alt="스크린샷 2024-07-13 20 47 54" src="https://github.com/user-attachments/assets/c804ea76-1d9c-4f3c-be3a-12027ce9cbaa">
+
+
+- NextJS의 기능인 Parallel routes와 Intercepting routes 기능을 결합하여 토이프로젝트 아이콘을 클릭하면 실제 앱이 실행되는 것처럼 모달창으로 보여지도록 구현
 ### 계산기 앱
-사진
-기능
+
+<img width="1000" alt="스크린샷 2024-07-13 20 47 59" src="https://github.com/user-attachments/assets/ecd2c39f-81a6-46d6-b206-f091c75ff3e4">
+
+
+- 실제 MAC OS 계산기 앱 UI 디자인을 참고하여 구성하였으며, 실제 계산기 처럼 동작하도록 기능별 로직들을 경험해보며 직접 구현 
+
 ### 날씨 앱
-사진
-기능
+
+<img width="306" alt="스크린샷 2024-07-13 21 54 27" src="https://github.com/user-attachments/assets/83e3fa00-adfc-4ad6-8801-f1f68f6eaa68">
+<img width="306" alt="스크린샷 2024-07-13 21 54 32" src="https://github.com/user-attachments/assets/772e12df-a231-4a50-b5e8-99a32e9181ac">
+<img width="306" alt="스크린샷 2024-07-13 21 54 36" src="https://github.com/user-attachments/assets/0584aeed-f546-40d6-bbf9-96426969c3db">
+
+- openweathermap API를 활용하여 서울, 도쿄, 뉴욕, 런던, 파리의 실시간 날씨를 동적으로 그에 맞게 변하는 배경화면과 함께 보여줌
 
    
 ## 📁 파일 구조
