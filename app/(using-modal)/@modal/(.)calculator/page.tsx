@@ -79,10 +79,17 @@ const Modal = () => {
   const handlePercentageClick = () => {
     setDisplay((prev) => String(parseFloat(prev) / 100));
   };
+  
+  const handleClickDot = () => {
+    if (!display.includes(".")) {
+      setDisplay(display + ".");
+    }
+  }
+  
   return (
     <div className="flex flex-col absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-96 bg-stone-700/90 rounded-2xl shadow-3xl overflow-hidden">
       <MacHeader />
-      <div className="grow w-full h-20rem grid grid-cols-4 overflow-hidden">
+      <div className="grow w-full h-20rem grid grid-cols-4 pt-10 overflow-hidden">
         <div
           className={`flex justify-end items-end h-16 text-${displayFontSize} text-white col-span-4 px-4 font-extralight `}
         >
@@ -216,7 +223,7 @@ const Modal = () => {
         >
           0
         </button>
-        <button className="bg-white/20 text-white text-xl">.</button>
+        <button className="bg-white/20 text-white text-xl" onClick={handleClickDot}>.</button>
         <button
           className="bg-cal-yellow text-white text-xl"
           onClick={handleClickEqual}

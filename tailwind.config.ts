@@ -20,7 +20,7 @@ const config: Config = {
         Thunderstorm : "url('/thunder.jpg')",
         Drizzle : "url('/drizzle.jpg')",
         Rain : "url('/rain.jpg')",
-        Snow : "url('/Snow.jpg')",
+        Snow : "url('/snow.jpg')",
         Atmosphere : "url('/atmosphere.jpg')",
         Clear : "url('/clear.jpg')",
         Clouds : "url('/clouds.jpg')"
