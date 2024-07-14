@@ -17,13 +17,13 @@ const config: Config = {
         kakao: "url('/kakao.png')",
         mongo: "url('/mongo.png')",
         safari: "url('/safari.png')",
-        Thunderstorm : "url('/thunder.jpg')",
-        Drizzle : "url('/drizzle.jpg')",
-        Rain : "url('/rain.jpg')",
-        Snow : "url('/snow.jpg')",
-        Atmosphere : "url('/atmosphere.jpg')",
-        Clear : "url('/clear.jpg')",
-        Clouds : "url('/clouds.jpg')"
+        Thunderstorm : "url('/weather/thunder.jpg')",
+        Drizzle : "url('/weather/drizzle.jpg')",
+        Rain : "url('/weather/rain.jpg')",
+        Snow : "url('/weather/snow.jpg')",
+        Atmosphere : "url('/weather/atmosphere.jpg')",
+        Clear : "url('/weather/clear.jpg')",
+        Clouds : "url('/weather/clouds.jpg')"
       },
       backgroundColor: {
         "mac-red": "#FF5F57",
